@@ -29,4 +29,7 @@ rules:
       - ['^[^.]']
       # Relative imports
       - ['^\\.']
-
+  no-multiple-empty-lines:
+    - error
+    - max: 1
+      maxEOF: 1

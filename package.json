@@ -1,0 +1,13 @@
+{
+  "name": "dorm",
+  "version": "0.1.0",
+  "description": "DORM is a typescript and javascript ORM",
+  "main": "src/index.ts",
+  "repository": "git@github.com:ksewo/dorm.git",
+  "author": "ksewo <ksewosteam@gmail.com>",
+  "license": "GPL-3.0",
+  "private": false,
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}

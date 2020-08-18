@@ -8,15 +8,20 @@
   "license": "GPL-3.0",
   "private": false,
   "scripts": {
-    "lint": "yarn run eslint --ext .ts src/"
+    "lint": "yarn run eslint --ext .ts src/",
+    "test": "yarn run jest --passWithNoTests",
+    "coverage": "yarn run test --coverage"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.10",
     "@typescript-eslint/eslint-plugin": "^3.9.1",
     "@typescript-eslint/parser": "^3.9.1",
     "eslint": "^7.7.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-simple-import-sort": "^5.0.3",
+    "jest": "^26.4.0",
+    "ts-jest": "^26.2.0",
     "typescript": "^3.9.7"
   }
 }

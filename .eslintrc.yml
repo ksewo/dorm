@@ -1,0 +1,32 @@
+---
+
+root: true
+
+parser: '@typescript-eslint/parser'
+
+plugins:
+  - '@typescript-eslint'
+  - simple-import-sort
+
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - airbnb-base
+
+rules:
+  quotes: [error,single]
+  import/prefer-default-export: off
+  simple-import-sort/sort:
+    - error
+    - groups:
+      # Side effect imports.
+      - ['^\\u0000']
+      # Packages
+      # Things that start with a letter (or digit or underscore), or `@` followed by a letter.
+      - ['^@?\\w']
+      - ['^~']
+      # Anything that does not start with a dot, i.e. absolute imports
+      - ['^[^.]']
+      # Relative imports
+      - ['^\\.']
+

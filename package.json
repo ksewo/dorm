@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "lint": "yarn run eslint --ext .ts src/",
-    "test": "yarn run jest --passWithNoTests",
+    "test": "yarn run jest",
     "coverage": "yarn run test --coverage"
   },
   "devDependencies": {

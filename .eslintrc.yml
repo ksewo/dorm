@@ -13,8 +13,17 @@ extends:
   - plugin:@typescript-eslint/recommended
   - airbnb-base
 
+env:
+  node: true
+  jest: true
+
 rules:
   quotes: [error,single]
+  import/extensions:
+    - error
+    - ignorePackages
+    - js: never
+      ts: never
   import/prefer-default-export: off
   simple-import-sort/sort:
     - error
@@ -33,3 +42,15 @@ rules:
     - error
     - max: 1
       maxEOF: 1
+  '@typescript-eslint/no-empty-interface': off
+
+overrides:
+  - files: [src/**/__tests__/*]
+    rules:
+      max-classes-per-file: off
+
+settings:
+  import/resolver:
+    node:
+      extensions: [.js, .ts]
+

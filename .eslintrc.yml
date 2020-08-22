@@ -52,5 +52,5 @@ overrides:
 settings:
   import/resolver:
     node:
-      extensions: [.js, .ts]
+      extensions: [.js, .ts, .json]
 

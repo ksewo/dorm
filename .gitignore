@@ -104,3 +104,6 @@ dist
 .tern-port
 
 build/
+
+# Directory for development and testing
+dev/
